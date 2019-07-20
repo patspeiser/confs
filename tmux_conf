@@ -1,0 +1,11 @@
+#mouse mode on in tmux2.1+
+set-option -g mouse on
+
+# KEEP AT BOTTOM
+# List of plugins. 
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-better-mouse-mode'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'
